@@ -20,10 +20,11 @@
 
     header {
       background: rgba(0, 0, 0, 0.2);
-      padding: 1rem 2rem;
+      padding: 1rem 1.5rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
     }
 
     .logo-container {
@@ -40,6 +41,8 @@
     .nav-buttons {
       display: flex;
       gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
     }
 
     .nav-button {
@@ -58,20 +61,21 @@
     }
 
     .container {
-      padding: 2rem;
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
     }
 
     h1 {
       text-align: center;
       margin: 2rem 0 0.5rem;
-      font-size: 2.8rem;
-      color: #fff;
+      font-size: 2.2rem;
       text-shadow: 1px 1px 2px #00000050;
     }
 
     .subheading {
       text-align: center;
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       font-weight: bold;
       margin-bottom: 2rem;
       color: #ffe57f;
@@ -82,8 +86,8 @@
       background: rgba(255,255,255,0.15);
       border: none;
       color: #fff;
-      padding: 1rem 2rem;
-      font-size: 1.2rem;
+      padding: 1rem;
+      font-size: 1.1rem;
       border-radius: 12px;
       cursor: pointer;
       width: 100%;
@@ -127,15 +131,16 @@
 
     .about-section {
       display: none;
-      padding: 3rem 2rem;
+      padding: 3rem 1.5rem;
       background: rgba(255,255,255,0.1);
       min-height: 80vh;
       border-radius: 20px;
-      margin: 2rem;
+      max-width: 1000px;
+      margin: auto;
     }
 
     .about-section h2 {
-      font-size: 2rem;
+      font-size: 1.8rem;
       margin-bottom: 1rem;
       color: #fff;
       border-bottom: 2px solid #fff;
@@ -145,6 +150,7 @@
     .about-section p, .about-section a {
       color: #fff;
       line-height: 1.6;
+      font-size: 1rem;
     }
 
     .about-section a {
@@ -157,6 +163,37 @@
       margin: 2rem;
       font-size: 0.85rem;
       color: #eee;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .subheading {
+        font-size: 1rem;
+      }
+
+      .nav-buttons {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-end;
+        margin-top: 1rem;
+      }
+
+      .nav-button {
+        width: 100%;
+        text-align: right;
+      }
+
+      .logo-container img {
+        height: 30px;
+      }
+
+      .about-section, .container {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
@@ -179,10 +216,8 @@
     <h1>AKTU 1st Year - Important Questions</h1>
     <p class="subheading">For B.Tech CSE 1st Year Students</p>
 
-    <!-- Subject Button -->
     <button class="subject-btn" onclick="toggleUnits()">📘 Mechanical</button>
 
-    <!-- Units Section -->
     <div class="units-container" id="math2-units" style="display: none;">
       <div class="unit-box">
         <a class="unit-link" href="UNIT-1.png" target="_blank">📘 Unit 1 - Click to View</a>
