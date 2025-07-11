@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Unit Wise Questions - Math 2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      color: #fff;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      color: #00e5ff;
+    }
+
+    .subject-btn {
+      background: rgba(255,255,255,0.1);
+      border: none;
+      color: #fff;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border-radius: 12px;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 1rem;
+      transition: background 0.2s ease;
+    }
+
+    .subject-btn:hover {
+      background: rgba(255,255,255,0.2);
+    }
+
+    .units-container {
+      display: none;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .unit-box {
+      background: rgba(255,255,255,0.1);
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border-radius: 10px;
+      text-align: center;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .unit-box:hover {
+      background: rgba(255,255,255,0.2);
+    }
+
+    a.unit-link {
+      text-decoration: none;
+      color: #00e5ff;
+      font-weight: bold;
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>AKTU 1st Year - Important Questions</h1>
+
+  <!-- Subject Button -->
+  <button class="subject-btn" onclick="toggleUnits()">Mechanical</button>
+
+  <!-- Units will show after click -->
+  <div class="units-container" id="math2-units">
+    <div class="unit-box">
+      <a class="unit-link" href="C:\c language\PYP WEBSITE\imp-question\images\mechanical\unit-1.png" target="_blank">📘 Unit 1 - Click to View</a>
+    </div>
+    <div class="unit-box">
+      <a class="unit-link" href="C:\c language\PYP WEBSITE\imp-question\images\mechanical\unit-2.png" target="_blank">📘 Unit 2 - Click to View</a>
+    </div>
+    <div class="unit-box">
+      <a class="unit-link" href="C:\c language\PYP WEBSITE\imp-question\images\mechanical\unit-3.png" target="_blank">📘 Unit 3 - Click to View</a>
+    </div>
+    <div class="unit-box">
+      <a class="unit-link" href="C:\c language\PYP WEBSITE\imp-question\images\mechanical\unit-4.png" target="_blank">📘 Unit 4 - Click to View</a>
+    </div>
+    <div class="unit-box">
+      <a class="unit-link" href="C:\c language\PYP WEBSITE\imp-question\images\mechanical\unit-5.png" target="_blank">📘 Unit 5 - Click to View</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 WHATIN | Designed by Dushyant Saini
+  </footer>
+
+  <script>
+    function toggleUnits() {
+      const units = document.getElementById("math2-units");
+      units.style.display = (units.style.display === "block") ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
