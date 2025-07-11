@@ -26,6 +26,17 @@
       align-items: center;
     }
 
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .logo-container img {
+      height: 40px;
+      border-radius: 8px;
+    }
+
     .nav-buttons {
       display: flex;
       gap: 1rem;
@@ -151,9 +162,12 @@
 </head>
 <body>
 
-  <!-- ✅ Header Navigation -->
+  <!-- ✅ Header Navigation with Logo -->
   <header>
-    <h2 style="font-weight: 600;">WHATIN</h2>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="WHATIN Logo" />
+      <h2 style="font-weight: 600; margin: 0;">WHATIN</h2>
+    </div>
     <div class="nav-buttons">
       <button class="nav-button" onclick="showHome()">Home</button>
       <button class="nav-button" onclick="showAbout()">About Us</button>
@@ -195,9 +209,8 @@
     <p>This website is built to help AKTU students access <strong>unit-wise important questions</strong> easily and effectively.</p>
     <p>If you have suggestions, feedback or want to collaborate, feel free to contact me:</p>
     <ul>
-      <li>📧 Email: <a href="sainidushyant756@gmail.com">sainidushyant756@gmail.com</a></li>
-      <li>🔗 LinkedIn: <a href="https://linkedin.com/in/dushyant-saini-6384a532b" target="_blank">https://linkedin.com/in/dushyant-saini-6384a532b</a></li>
-      
+      <li>📧 Email: <a href="mailto:sainidushyant756@gmail.com">sainidushyant756@gmail.com</a></li>
+      <li>🔗 LinkedIn: <a href="https://linkedin.com/in/dushyant-saini-6384a532b" target="_blank">linkedin.com/in/dushyant-saini-6384a532b</a></li>
     </ul>
   </div>
 
