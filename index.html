@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AKTU Unit Wise Questions</title>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
-  <link rel ="stylesheet" href = "style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -23,26 +23,76 @@
 
   <!-- Home Content Section -->
   <div class="container" id="home-section">
-    <h1>AKTU 1st Year - Important Questions</h1>
-    <p class="subheading">For B.Tech CSE 1st Year Students</p>
+    <h1>AKTU - Important Questions</h1>
+    <p class="subheading">For B.Tech CSE Students</p>
 
-    <button class="subject-btn" onclick="toggleUnits()">📘 Mechanical</button>
+    <!-- Year Selection -->
+    <div class="year-buttons">
+      <button class="nav-button" onclick="showYear('year1')">1st Year</button>
+      <button class="nav-button" onclick="showYear('year2')">2nd Year</button>
+    </div>
 
-    <div class="units-container" id="math2-units" style="display: none;">
-      <div class="unit-box">
-        <a class="unit-link" href="UNIT-1.png" target="_blank">📘 Unit 1 - Click to View</a>
+    <!-- 1st Year Section -->
+    <div class="year-section" id="year1" style="display:none;">
+      <h2>1st Year - Subjects</h2>
+
+      <button class="subject-btn" onclick="toggleUnits('mech-units')">📘 Mechanical</button>
+      <div class="units-container" id="mech-units" style="display: none;">
+        <div class="unit-box"><a class="unit-link" href="UNIT-1.png" target="_blank">📘 Unit 1</a></div>
+        <div class="unit-box"><a class="unit-link" href="UNIT-2.png" target="_blank">📘 Unit 2</a></div>
+        <div class="unit-box"><a class="unit-link" href="UNIT-3.png" target="_blank">📘 Unit 3</a></div>
+        <div class="unit-box"><a class="unit-link" href="UNIT-4.png" target="_blank">📘 Unit 4</a></div>
+        <div class="unit-box"><a class="unit-link" href="UNIT-5.png" target="_blank">📘 Unit 5</a></div>
       </div>
-      <div class="unit-box">
-        <a class="unit-link" href="UNIT-2.png" target="_blank">📘 Unit 2 - Click to View</a>
+    </div>
+
+    <!-- 2nd Year Section -->
+    <div class="year-section" id="year2" style="display:none;">
+      <h2>2nd Year - Subjects</h2>
+
+      <button class="subject-btn" onclick="toggleUnits('ds-units')">💻 Data Structures</button>
+      <div class="units-container" id="ds-units" style="display: none;">
+        <div class="unit-box"><a class="unit-link" href="#">Unit 1</a></div>
+        <div class="unit-box"><a class="unit-link" href="#">Unit 2</a></div>
+        <div class="unit-box"><a class="unit-link" href="#">Unit 3</a></div>
+        <div class="unit-box"><a class="unit-link" href="#">Unit 4</a></div>
+        <div class="unit-box"><a class="unit-link" href="#">Unit 5</a></div>
       </div>
-      <div class="unit-box">
-        <a class="unit-link" href="UNIT-3.png" target="_blank">📘 Unit 3 - Click to View</a>
+
+      <button class="subject-btn" onclick="toggleUnits('dbms-units')">🗄 Database Management</button>
+      <div class="units-container" id="dbms-units" style="display: none;">
+        <div class="unit-box"><a class="unit-link" href="#">Unit 1</a></div>
+        <div class="unit-box"><a class="unit-link" href="#">Unit 2</a></div>
+        <div class="unit-box"><a class="unit-link" href="#">Unit 3</a></div>
+        <div class="unit-box"><a class="unit-link" href="#">Unit 4</a></div>
+        <div class="unit-box"><a class="unit-link" href="#">Unit 5</a></div>
       </div>
-      <div class="unit-box">
-        <a class="unit-link" href="UNIT-4.png" target="_blank">📘 Unit 4 - Click to View</a>
+
+      <button class="subject-btn" onclick="toggleUnits('os-units')">🖥 Operating System</button>
+      <div class="units-container" id="os-units" style="display: none;">
+        <div class="unit-box"><a class="unit-link" href="#">Unit 1</a></div>
+        <div class="unit-box"><a class="unit-link" href="#">Unit 2</a></div>
+        <div class="unit-box"><a class="unit-link" href="#">Unit 3</a></div>
+        <div class="unit-box"><a class="unit-link" href="#">Unit 4</a></div>
+        <div class="unit-box"><a class="unit-link" href="#">Unit 5</a></div>
       </div>
-      <div class="unit-box">
-        <a class="unit-link" href="UNIT-5.png" target="_blank">📘 Unit 5 - Click to View</a>
+
+      <button class="subject-btn" onclick="toggleUnits('coa-units')">⚙️ Computer Organization</button>
+      <div class="units-container" id="coa-units" style="display: none;">
+        <div class="unit-box"><a class="unit-link" href="#">Unit 1</a></div>
+        <div class="unit-box"><a class="unit-link" href="#">Unit 2</a></div>
+        <div class="unit-box"><a class="unit-link" href="#">Unit 3</a></div>
+        <div class="unit-box"><a class="unit-link" href="#">Unit 4</a></div>
+        <div class="unit-box"><a class="unit-link" href="#">Unit 5</a></div>
+      </div>
+
+      <button class="subject-btn" onclick="toggleUnits('math3-units')">📐 Mathematics III</button>
+      <div class="units-container" id="math3-units" style="display: none;">
+        <div class="unit-box"><a class="unit-link" href="#">Unit 1</a></div>
+        <div class="unit-box"><a class="unit-link" href="#">Unit 2</a></div>
+        <div class="unit-box"><a class="unit-link" href="#">Unit 3</a></div>
+        <div class="unit-box"><a class="unit-link" href="#">Unit 4</a></div>
+        <div class="unit-box"><a class="unit-link" href="#">Unit 5</a></div>
       </div>
     </div>
   </div>
@@ -65,8 +115,8 @@
 
   <!-- Script -->
   <script>
-    function toggleUnits() {
-      const units = document.getElementById("math2-units");
+    function toggleUnits(id) {
+      const units = document.getElementById(id);
       units.style.display = (units.style.display === "block") ? "none" : "block";
     }
 
@@ -78,7 +128,15 @@
     function showHome() {
       document.getElementById("home-section").style.display = "block";
       document.getElementById("about-section").style.display = "none";
+      document.getElementById("year1").style.display = "none";
+      document.getElementById("year2").style.display = "none";
       window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function showYear(yearId) {
+      document.getElementById("year1").style.display = "none";
+      document.getElementById("year2").style.display = "none";
+      document.getElementById(yearId).style.display = "block";
     }
   </script>
 </body>
